@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PAGE NAME</title>
+    <title>DATA OF NP</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -44,7 +44,7 @@
 
     <style>
         table{
-            margin: 20px !important;
+            margin-top: 20px !important;
             border-radius: 5px !important;
             min-width: 50% !important;
             font-size: 18px !important;
@@ -67,7 +67,7 @@
              color: rgb(49, 49, 49) !important;
          }
           #vecid{
-             width: 450px;
+             width: 40%;
              height: 40px;
              background-color: whitesmoke;
              border-radius: 5px;
@@ -83,6 +83,18 @@
             font-family:"Maiandra GD" ;
             font-size: 20px;
             padding: 5px;
+         }
+         #submit:hover{
+             background-color: tomato;
+             color: white;
+         }
+         @media only screen and (max-width: 600px) {
+            #vecid{
+                width: 80%;
+            }
+            #submit{
+                margin: 10px;
+            }
          }
     </style>
 </head>
@@ -141,7 +153,7 @@
             <div class="overlay">
                         <!-- enter python data  -->
 
-                        <center><input type="text" id="vecid">
+                        <center><input type="text" id="vecid" placeholder="ENTER NP NUMBER">
                             <input type="submit" id="submit" onclick="getdetails()" value="Submit"></center>
                         
                         <!-- Dont Change Anything Below  -->
@@ -171,9 +183,9 @@
                     <div class="col-sm-4 col-md-4 item">
                         <h3 style="color: black;">Services</h3>
                         <ul>
-                            <li><a href="#">Number Plate detection</a></li>
-                            <li><a href="#">Face detection</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="npdetect.html">Number Plate detection</a></li>
+                            <li><a href="https://default-detect-api.herokuapp.com/">Face detection</a></li>
+                            <li><a href="index.html">Hosting</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-4 item">
